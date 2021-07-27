@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  nodejs:
+    build: .
+    image: robertofortes/ubuntu-ssh-nvm:latest
+    volumes:
+      - .:/workspace
+    ports:
+      - "22"
+      - "3090"
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: secretpassword
+    ports:
+      - "5432"
+    volumes:
+      - ./dados_postgres:/var/lib/postgresql/data
+    
