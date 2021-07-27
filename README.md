@@ -1,5 +1,5 @@
 # docker-compose
-Trabalhando com múltiplos containers/imagens e docker compose. 🐳
+Trabalhando com múltiplos containers/imagens e docker compose. 🐳\
 Esse container possui:
 
 - VIM
